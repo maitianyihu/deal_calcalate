@@ -1,0 +1,41 @@
+<!--pages/calculate/calculate.wxml-->
+
+<view class="bg">
+	<view class="titlebg">
+		<text class="title">请输入数值</text>
+	</view>
+
+	<view class="inputAbg">
+		<view class="inputtitlebg">
+			<text class="inputtitle" space="ensp">  佣金提成(元):</text>
+		</view>
+
+		<input class="inputA" bindinput="getAInputValue" value='{{aValue}}'>
+		</input>
+		<text class="clearText" bindtap="clearA"> 清除</text>
+	</view>
+
+	<view class="inputBbg">
+		<text class="inputtitle" space="ensp">     提成比例:</text>
+		<input class="inputB" bindinput="getBInputValue" value='{{bValue}}'>
+		</input>
+		<text class="clearText" bindtap="clearB"> 清除</text>
+	</view>
+	<view class="inputCbg">
+		<view class="inputtitlebg">
+			<text class="inputtitle">佣金率(万分之):</text>
+		</view>
+
+		<input class="inputC" bindinput="getCInputValue" value='{{cValue}}'>
+		</input>
+		<text class="clearText" bindtap="clearC"> 清除</text>
+	</view>
+
+
+	<view class="btnbg">
+		<button class="button" style="width: 200px;height: 40px;" bindtap="btnClick">开始计算</button>
+	</view>
+
+	<view class="reslut"> 交易量(万):</view>
+	<text style="color:red;" selectable='true'> {{calculate}} </text>
+</view>

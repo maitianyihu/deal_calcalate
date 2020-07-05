@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/calculate/calculate",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFA500",
+    "navigationBarTitleText": "交易量计算",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
